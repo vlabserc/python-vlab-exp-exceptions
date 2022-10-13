@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Exception Handling </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <script defer src="script.js"></script>
+    <body>
+        <h1 style="text-align: center;">Exception Handling</h1>
+        <div class="container">
+
+            <div class="user-input box">
+                <h3 style="text-align: center;">User Input</h3>
+                <p>Which exception would you like to practice?</p>
+                <select name="exception-name" id="exception-name">
+                    <option selected value="ValueError">ValueError</option>
+                    <option value="KeyError">KeyError</option>
+                    <option value="IndexError">IndexError</option>
+                    <option value="ZeroDivisionError">ZeroDivisionError</option>
+                </select>
+            </div>
+
+            <div class="try-it-out box">
+                <p style="text-align:center">Fill in the blanks to make a program that loops infinitely until the user enters an integer</p>
+                <pre class="prettyprint lang-py" style="border: none; margin-top: 1.5rem;">
+ while True:
+     try:
+         n = <div class="nocode exception"><select name="Int" id="int">
+             <option hidden disabled selected value></option>
+             <option value="str">str</option>
+             <option value="int">int</option>
+             <option value="float">float</option>
+         </select></div>(input("Enter a number: "))
+         break
+     except <div class="nocode exception"><select name="Exception" id="exception">
+             <option hidden disabled selected value></option>
+             <option value="ValueError">ValueError</option>
+             <option value="ZeroDivisionError">ZeroDivisionError</option>
+             <option value="NameError">NameError</option>
+         </select></div> as v:
+         print("Oops! Not a number")
+                </pre>
+                
+                <button type="submit" onclick="handleSubmit()" id="submit">Submit</button>
+                <pre class="Answer"></pre>
+            </div>
+
+            <div class="how-confident box">
+                <p>Can you generate a Value Error? </p>
+                <pre class="prettyprint code lang-py" style="border: none;">
+>>> import math
+>>> n = int(input("Enter a positive number: "))
+<input type="text" id="num" onchange="Test()"/>
+>>> print(f'Square Root of {n} is {math.sqrt(n)}')
+                    <p id="demo"></p>
+                </pre>
+                <div id="reward"></div>
+                <button id="refresh" onclick="Refresh()" style="display: none">Try Again?</button>
+            </div>
+
+        </div>
+
+    </body>
+</html>
