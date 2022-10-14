@@ -12,10 +12,10 @@
         <h1 style="text-align: center;">Exception Handling</h1>
         <div class="container">
 
-            <div class="user-input box">
-                <h3 style="text-align: center;">User Input</h3>
-                <p>Which exception would you like to practice?</p>
-                <select name="exception-name" id="exception-name">
+            <div class="box">
+                <h3 class="header">Let's learn Exceptions!</h3>
+                <p style="text-align: center;margin-top: 2.5rem;">Which exception would you like to practice?</p>
+                <select name="exception-name" id="exception-name" onchange="changeExperiment()">
                     <option selected value="ValueError">ValueError</option>
                     <option value="KeyError">KeyError</option>
                     <option value="IndexError">IndexError</option>
@@ -23,7 +23,8 @@
                 </select>
             </div>
 
-            <div class="try-it-out box">
+            <div class="ValueError box">
+                <h4 class="header">Applications of Exception Handling</h4>
                 <p style="text-align:center">Fill in the blanks to make a program that loops infinitely until the user enters an integer</p>
                 <pre class="prettyprint lang-py" style="border: none; margin-top: 1.5rem;">
  while True:
@@ -45,10 +46,133 @@
                 </pre>
                 
                 <button type="submit" onclick="handleSubmit()" id="submit">Submit</button>
-                <pre class="Answer"></pre>
+                <p class="Answer"></p>
             </div>
 
-            <div class="how-confident box">
+            <div class="ValueError box">
+                <h4 class="header">Generate an Exception</h4>
+                <p>Can you generate a Value Error? </p>
+                <pre class="prettyprint code lang-py" style="border: none;">
+>>> import math
+>>> n = int(input("Enter a positive number: "))
+<input type="text" id="num" onchange="TestValueError()"/>
+>>> print(f'Square Root of {n} is {math.sqrt(n)}')
+                    <p id="demo"></p>
+                </pre>
+                <div id="reward"></div>
+                <button id="refresh" onclick="Refresh()" style="display: none">Try Again?</button>
+            </div>
+
+
+
+            <div class="KeyError box">
+                <h4 class="header">Applications of Exception Handling</h4>
+                <p style="text-align:center">KeyError</p>
+                <pre class="prettyprint lang-py" style="border: none; margin-top: 1.5rem;">
+ while True:
+ try:
+         n = <div class="nocode exception"><select name="Int" id="int">
+             <option hidden disabled selected value></option>
+             <option value="str">str</option>
+             <option value="int">int</option>
+             <option value="float">float</option>
+         </select></div>(input("Enter a number: "))
+         break
+     except <div class="nocode exception"><select name="Exception" id="exception">
+             <option hidden disabled selected value></option>
+             <option value="ValueError">ValueError</option>
+             <option value="ZeroDivisionError">ZeroDivisionError</option>
+             <option value="NameError">NameError</option>
+         </select></div> as v:
+         print("Oops! Not a number")
+                </pre>
+                
+                <button type="submit" onclick="handleSubmit()" id="submit">Submit</button>
+                <p class="Answer"></p>
+            </div>
+
+            <div class="KeyError box">
+                <h4 class="header">Generate an Exception</h4>
+                <p>Can you generate a Value Error? </p>
+                <pre class="prettyprint code lang-py" style="border: none;">
+>>> age = {'John': 30,'Adam': 28,'Jake':37}
+>>> name = input("Which employee's age do you want: ")
+<input type="text" id="name" onchange="TestKeyError()"/>
+>>> print(f'Age of ${name} is ${age[name]}')
+                    <p id="demoKey"></p>
+                </pre>
+                <div id="rewardKey"></div>
+                <button id="refreshKey" onclick="Refresh()" style="display: none">Try Again?</button>
+            </div>
+
+            <div class="IndexError box">
+                <h4 class="header">Applications of Exception Handling</h4>
+                <p style="text-align:center">IndexError</p>
+                <pre class="prettyprint lang-py" style="border: none; margin-top: 1.5rem;">
+while True:
+     try:
+         n = <div class="nocode exception"><select name="Int" id="int">
+             <option hidden disabled selected value></option>
+             <option value="str">str</option>
+             <option value="int">int</option>
+             <option value="float">float</option>
+         </select></div>(input("Enter a number: "))
+         break
+     except <div class="nocode exception"><select name="Exception" id="exception">
+             <option hidden disabled selected value></option>
+             <option value="ValueError">ValueError</option>
+             <option value="ZeroDivisionError">ZeroDivisionError</option>
+             <option value="NameError">NameError</option>
+         </select></div> as v:
+         print("Oops! Not a number")
+                </pre>
+                
+                <button type="submit" onclick="handleSubmit()" id="submit">Submit</button>
+                <p class="Answer"></p>
+            </div>
+
+            <div class="IndexError box">
+                <h4 class="header">Generate an Exception</h4>
+                <p>Can you generate a Value Error? </p>
+                <pre class="prettyprint code lang-py" style="border: none;">
+>>> import math
+>>> n = int(input("Enter a positive number: "))
+<input type="text" id="num" onchange="Test()"/>
+>>> print(f'Square Root of {n} is {math.sqrt(n)}')
+                    <p id="demoKey"></p>
+                </pre>
+                <div id="rewardKey"></div>
+                <button id="refreshKey" onclick="Refresh()" style="display: none">Try Again?</button>
+            </div>
+
+            <div class="ZeroDivisionError box">
+                <h4 class="header">Applications of Exception Handling</h4>
+                <p style="text-align:center">ZeroDivisionError</p>
+                <pre class="prettyprint lang-py" style="border: none; margin-top: 1.5rem;">
+ while True:
+     try:
+         n = <div class="nocode exception"><select name="Int" id="int">
+             <option hidden disabled selected value></option>
+             <option value="str">str</option>
+             <option value="int">int</option>
+             <option value="float">float</option>
+         </select></div>(input("Enter a number: "))
+         break
+     except <div class="nocode exception"><select name="Exception" id="exception">
+             <option hidden disabled selected value></option>
+             <option value="ValueError">ValueError</option>
+             <option value="ZeroDivisionError">ZeroDivisionError</option>
+             <option value="NameError">NameError</option>
+         </select></div> as v:
+         print("Oops! Not a number")
+                </pre>
+                
+                <button type="submit" onclick="handleSubmit()" id="submit">Submit</button>
+                <p class="Answer"></p>
+            </div>
+
+            <div class="ZeroDivisionError box">
+                <h4 class="header">Generate an Exception</h4>
                 <p>Can you generate a Value Error? </p>
                 <pre class="prettyprint code lang-py" style="border: none;">
 >>> import math
