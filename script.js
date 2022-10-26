@@ -1,25 +1,30 @@
 let experiments = ['ValueError','KeyError','IndexError','ZeroDivisionError']
-function animate(i) {
-    if(i==1){
-    } else {
-    }
-}
-function handleSubmit(){
-    console.log("yes")
-    let intOption = document.getElementById("int").value
-    let exceptionOption = document.getElementById("exception").value
-    let answer = document.getElementsByClassName("Answer")[0]
+function handleSubmitValue(){
+    let intOption = document.getElementById("value").value
+    let exceptionOption = document.getElementById("exceptionValue").value
+    let answer = document.getElementsByClassName("AnswerValue")[0]
     if(!intOption || !exceptionOption)
         answer.innerHTML = "Select all Options"
     else if(intOption === "int" && exceptionOption === "ValueError")
         answer.innerHTML = "Correct! ValueError Exception will be raised\n whenever user enters anything but a number"
     else
         answer.innerHTML = "Incorrect! Try Again"
-    }
+}
+function handleSubmitKey() {
+    let keyOption = document.getElementById("key").value
+    let exceptionOption = document.getElementById("exceptionKey").value
+    let answer = document.getElementsByClassName("AnswerKey")[0]
+    if(!keyOption || !exceptionOption)
+        answer.innerHTML = "Select all Options"
+    else if(keyOption === "employee_name" && exceptionOption === "KeyError")
+        answer.innerHTML = "Correct! KeyError will be raised whenever user enters  an employee not in the database"
+    else
+        answer.innerHTML = "Incorrect! Try Again"
+}
 function Refresh() {
     location.reload();
 }
-function changeExperiment() {
+function changeExperiment(){
     let experiment = document.getElementById("exception-name").value
     experiments.forEach(exp => {
         let elements = document.getElementsByClassName(exp)
@@ -33,18 +38,18 @@ function changeExperiment() {
     });
     
 }
-function TestValueError() {
+function TestValueError(){
     var x = document.getElementById("num").value;
     if (!(x>=0)) {
-        document.getElementById("demo").innerHTML = "ValueError: math domain error";
-        document.getElementById("reward").innerHTML = "You are an exception master!";
+        document.getElementById("demoValue").innerHTML = "ValueError: math domain error";
+        document.getElementById("rewardValue").innerHTML = "You are an exception master!";
     }
     else {
-        document.getElementById("demo").innerHTML = "Square Root of " + x + " is "+ Math.sqrt(x);
-        document.getElementById("reward").innerHTML = "You need a little more rebelion. Try again!";
-        document.getElementById("refresh").style.display='block';
-        event.currentTarget.value = "";
+        document.getElementById("demoValue").innerHTML = "Square Root of " + x + " is "+ Math.sqrt(x);
+        document.getElementById("rewardValue").innerHTML = "You need a little more rebellion. Try again!";
+        document.getElementById("refreshValue").style.display='block';
     }
+    event.currentTarget.value = "";
 
 }
 function TestKeyError(){
@@ -62,8 +67,8 @@ function TestKeyError(){
         document.getElementById("rewardKey").innerHTML = "You are an exception master!";
     }else{
         document.getElementById("demoKey").innerHTML = "Age of " + name + " is " + age;
-        document.getElementById("rewardKey").innerHTML = "You need a little more rebelion. Try again!";
+        document.getElementById("rewardKey").innerHTML = "You need a little more rebellion. Try again!";
         document.getElementById("refreshKey").style.display='block';
-        event.currentTarget.value = "";
     }
+    event.currentTarget.value = "";
 }

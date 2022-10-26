@@ -50,3 +50,7 @@ body{
 .thin{
     width: 22%;
 }
+.code{
+    border: none !important;
+    margin-top: 1.5rem;
+}
