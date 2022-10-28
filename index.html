@@ -15,9 +15,9 @@
 			<h3 class="header">Let's learn Exceptions!</h3>
 			<p style="text-align: center;margin-top: 2.5rem;">Which exception would you like to practice?</p>
 			<select autocomplete="off" name="exception-name" id="exception-name" onchange="changeExperiment()">
-				<option selected value="ValueError">ValueError</option>
+				<option value="ValueError">ValueError</option>
 				<option value="KeyError">KeyError</option>
-				<option value="IndexError">IndexError</option>
+				<option selected value="IndexError">IndexError</option>
 				<option value="ZeroDivisionError">ZeroDivisionError</option>
 			</select>
 		</div>
@@ -83,7 +83,7 @@ except <div class="nocode exception"><select autocomplete="off" name="Exception"
 			
 		<div class="KeyError box">
 			<h4 class="header">Applications of Exception Handling</h4>
-			<p style="text-align:center;">Fill in the blanks to make a program that\n finds out the employee ID of given employee</p>
+			<p style="text-align:center;">Fill in the blanks to make a program that finds out<br>the employee ID of given employee</p>
 			<pre class="code prettyprint lang-py">
 IDs = {'Richard':1,'John':2,'James':3}
 try:
@@ -112,12 +112,51 @@ except <div class="nocode exception"><select autocomplete="off" name="Exception"
 		
 		<div class="IndexError box">
 			<h4 class="header">Generate an Exception</h4>
-
+			<p style="text-align:center">Can you generate an Index Error? </p>
+			<pre class="prettyprint lang-py" style="border: none;">
+>>> fibonacci = [1,1,2,3,5,8,13,21,34]
+>>> index = input("Which Fibonacci number do you want: ")
+<input type="text" id="index" onchange="TestIndexError()"/>
+>>> print(f'{fibonacci[index]} is requested number')
+				<p id="demoIndex"></p>
+			</pre>
+			<div id="rewardIndex"></div>
+			<button id="refreshIndex" onclick="Refresh()" style="display: none">Try Again?</button>
 		</div>
 			
 		<div class="IndexError box">
 			<h4 class="header">Applications of Exception Handling</h4>
+			<p style="text-align: center ;">Fill in the blanks to make a program that takes an array as<br> input and deletes all the elements lesser than 10</p>
+			<pre class="code prettyprint lang-py">
+arr = [1,123,1,2,5,14,2,41,5,1]
+try:
+    for i in <div class="nocode exception"><select autocomplete="off" name="Key" id="range">
+        <option hidden disabled selected value></option>
+        <option value="range(len(arr))">range(len(arr))</option>
+        <option value="arr">arr</option>
+        <option value="range(len(arr)-1)">range(len(arr)-1)</option>
+    </select></div>
+        if arr[i] > 10:
+            <div class="nocode exception"><select autocomplete="off" name="Key" id="delete">
+                <option hidden disabled selected value></option>
+                <option value="arr.pop()">arr.pop()</option>
+                <option value="arr[i] = -1">arr[i] = -1</option>
+                <option value="del arr[i]">del arr[i]</option>
+            </select></div>
 
+except <div class="nocode exception"><select autocomplete="off" name="Exception" id="exceptionIndex">
+	<option hidden disabled selected value></option>
+	<option value="KeyError">KeyError</option>
+	<option value="IndexError">IndexError</option>
+	<option value="NameError">NameError</option>
+</select></div>:
+    print('Deleted all elements > 10')
+
+finally:
+    print('Array after deletion is',arr)
+			</pre>
+			<button type="submit" onclick="handleSubmitIndex()" id="submit">Submit</button>
+			<p class="AnswerIndex"></p>
 		</div>
 		
 		<div class="ZeroDivisionError box">

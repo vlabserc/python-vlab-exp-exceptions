@@ -7,7 +7,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 ` `Let us begin by reading Tanmay journey as  described below:
 
 
-|![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.001.png)|
+|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.001.png)|
 | :- |
 [1]
 |**User Scenario**:|
@@ -24,7 +24,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 
 
 
-|![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.002.png)|
+|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.002.png)|
 | :- |
 |<p>**User Scenario**</p><p></p>|
 
@@ -39,7 +39,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 
 
 
-|![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.003.png)|
+|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.003.png)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
 
@@ -55,7 +55,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 
 
 
-|![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.004.png)|
+|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.004.png)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
 
@@ -70,7 +70,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 
 
 
-|![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.005.png)|
+|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.005.png)|
 | :- |
 |<p>**User Scenario**:</p><p></p>|
 
@@ -94,7 +94,7 @@ For eg
 
 All the scenarios explained above are examples of Exception. An Exception is a object with description of what went wrong , followed by a traceback of what went wrong
 
-![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.006.png)
+![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.006.png)
 
 If we look at the code displayed above, we have initialized a variable named as “marks” with the value 100, then we are trying to divide the number 100 by 0, hence the python raised an ZeroDivisionError Exception stating that you cannot divide a number by zero.
 
@@ -106,7 +106,7 @@ The following are the most common types of Errors:
 
 1) Syntax Error
 
-![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.007.png)
+![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.007.png)
 
 - The above image displays an example of Syntax Error
 - In the above image, we have a piece of code and in that piece of code after “if and else statement” we have a colon missing, those errors are called as syntactical errors or we can call them compile time errors. 
@@ -142,7 +142,7 @@ This article will explain about ValueError, KeyError, IndexError, ZeroDivisionEr
 
 Example: Let us try to access elements from a vegetables list , whose index is out of bounds and handle that corresponding exceptions
 
-![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.008.png)
+![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.008.png)
 
 From the above example, we can observe that statements that are bound to catch error are placed inside “try” statement.We can observe that the second print statement tries to access vegetable name which are present at 5th index position, but the vegetables list does not contain  anything after index 3, hence when we are trying to access element at 5th index position , it will throw an exception. This exception is caught by the “except” statement
 
@@ -156,18 +156,18 @@ From the above example, we can observe that statements that are bound to catch e
 
 
 
-![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.009.png)
+![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.009.png)
 
 The above figure displays a try statement with multiple except clauses. First the index error would be raised and after that when you comment 2nd print statement from the try block, then KeyError Exception would be raised
 
-![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.010.png)
+![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.010.png)
 
 In the above figure, we have commented the 2nd print statement from the try clause, hence KeyError exception got executed
 
 
 
 
-|![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.011.png)|
+|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.011.png)|
 | :- |
 |**User Scenario:**|
 
@@ -183,11 +183,11 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-|![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.012.jpeg)|
+|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.012.jpeg)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
 
-|<p>In order to avoid the long queue, tanmay decided to utilize the self ordering machines which is placed by the pizza hut on their Entrance.However after utilizing that product he was no longer fan of that product.While he was ordering pizza in the self ordering machine ,initially he gets the following message as displayed in the below given image:</p><p>![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.013.png)</p><p>**Fig 1.1 The machine displays different categories of pizza available at their store. It asks the user to Press-1 if they wish to order pizza from the available categories, otherwise it says press-0 to exit**</p><p></p><p>![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.014.png)</p><p>**Fig 1.2 Since Tanmay wanted to order pizza from the categories which was displayed to him and as per the machine instructions he pressed -1** ,after which the machine asked tanmay to input which category of pizza he wanted to order?</p><p>![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.015.png)</p><p></p><p>Fig 1.3 Since tanmay wanted to order “veg” pizza , he typed “veg” on the screen after which the machine displayed that “the category of pizza which was entered by tanmay was available” along with that it also displayed  list of veg pizza available at their store along with their cost and code number. Every pizza is assigned a unique code number and price. For eg: veg cheese burst pizza is assigned code “0” and its price is 100 Rs.</p><p></p><p>![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.016.png)</p><p>Fig 1.4: After that the machine displayed a message to check the availability of the pizza, hence the machine asked tanmay to input the name of the pizza which he wished to order, hence he entered “vegan” to which the machine displayed an error such as “KeyError”  and tanmay was not able to understand the meaning of the same hence he decided to call the employee and take help from them</p><p></p><p></p>|
+|<p>In order to avoid the long queue, tanmay decided to utilize the self ordering machines which is placed by the pizza hut on their Entrance.However after utilizing that product he was no longer fan of that product.While he was ordering pizza in the self ordering machine ,initially he gets the following message as displayed in the below given image:</p><p>![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.013.png)</p><p>**Fig 1.1 The machine displays different categories of pizza available at their store. It asks the user to Press-1 if they wish to order pizza from the available categories, otherwise it says press-0 to exit**</p><p></p><p>![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.014.png)</p><p>**Fig 1.2 Since Tanmay wanted to order pizza from the categories which was displayed to him and as per the machine instructions he pressed -1** ,after which the machine asked tanmay to input which category of pizza he wanted to order?</p><p>![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.015.png)</p><p></p><p>Fig 1.3 Since tanmay wanted to order “veg” pizza , he typed “veg” on the screen after which the machine displayed that “the category of pizza which was entered by tanmay was available” along with that it also displayed  list of veg pizza available at their store along with their cost and code number. Every pizza is assigned a unique code number and price. For eg: veg cheese burst pizza is assigned code “0” and its price is 100 Rs.</p><p></p><p>![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.016.png)</p><p>Fig 1.4: After that the machine displayed a message to check the availability of the pizza, hence the machine asked tanmay to input the name of the pizza which he wished to order, hence he entered “vegan” to which the machine displayed an error such as “KeyError”  and tanmay was not able to understand the meaning of the same hence he decided to call the employee and take help from them</p><p></p><p></p>|
 | :- |
 
 ||
@@ -205,7 +205,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-|![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.017.jpeg)|
+|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.017.jpeg)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
 
@@ -216,7 +216,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 | :- |
 |<p>**How is the user feeling?**</p><p>Sad</p>|
 |<p>**Activity thought of/Performed?**</p><p>Took help from the store staff</p>|
-|<p>**What are the user expectations?**</p><p>If the error messages would have been displayed in human friendly way it would have saved his time </p><p>![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.018.png)</p><p></p><p>Displays the exact error message which Tanmay was Expecting</p>|
+|<p>**What are the user expectations?**</p><p>If the error messages would have been displayed in human friendly way it would have saved his time </p><p>![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.018.png)</p><p></p><p>Displays the exact error message which Tanmay was Expecting</p>|
 
 
 
@@ -233,7 +233,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-|![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.019.jpeg)|
+|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.019.jpeg)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
 
@@ -242,8 +242,8 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 ||
 | :- |
-|<p>![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.020.png)</p><p></p>|
-|<p>![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.021.png)</p><p>The above images displays error message which Tanmay had encountered</p>|
+|<p>![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.020.png)</p><p></p>|
+|<p>![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.021.png)</p><p>The above images displays error message which Tanmay had encountered</p>|
 |<p>**How is the user feeling?**</p><p>Sad</p>|
 |<p>**Activity thought of/Performed**</p><p>Took help from the employee </p>|
 |<p>**What are the user expectations?**</p><p>Displaying messages in human friendly manner</p>|
@@ -251,7 +251,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-|![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.017.jpeg)|
+|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.017.jpeg)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
 
@@ -262,7 +262,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 | :- |
 |<p>**How is the user feeling?**</p><p>Sad</p>|
 |<p>**Activity thought of/Performed?**</p><p>Took help from the store staff</p>|
-|<p>**What are the user expectations?**</p><p>If the error messages would have been displayed in human friendly way it would have saved his time </p><p>![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.022.png)</p><p></p><p>Displays the exact error message which Tanmay was Expecting</p>|
+|<p>**What are the user expectations?**</p><p>If the error messages would have been displayed in human friendly way it would have saved his time </p><p>![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.022.png)</p><p></p><p>Displays the exact error message which Tanmay was Expecting</p>|
 
 
 **What is ValueError Exception**
@@ -272,7 +272,7 @@ ValueError in python occurs when users gives an invalid value to a function but 
 
 
 
-|![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.023.jpeg)|
+|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.023.jpeg)|
 | :- |
 |**User Scenario:**|
 
@@ -283,7 +283,7 @@ ValueError in python occurs when users gives an invalid value to a function but 
 | :- |
 |<p>**How is the user feeling?**</p><p>Irritated</p>|
 |<p>**Activity thought of/Performed?**</p><p>Took help of the employee from the store </p>|
-|<p>**What are the user expectations?**</p><p>If the error messages would have been displayed in human friendly way it would have saved his time </p><p>![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.024.png)</p>|
+|<p>**What are the user expectations?**</p><p>If the error messages would have been displayed in human friendly way it would have saved his time </p><p>![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.024.png)</p>|
 
 **What is IndexError Exception**
 
@@ -292,7 +292,7 @@ IndexError Exception in python occurs when you are trying to access an index tha
 
 
 
-|![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.025.jpeg)|
+|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.025.jpeg)|
 | :- |
 |**User Scenario:**|
 
@@ -303,7 +303,7 @@ IndexError Exception in python occurs when you are trying to access an index tha
 | :- |
 |<p>**How is the user feeling:**</p><p>Happy, because finally after a lot of trouble he managed to order pizza successfully</p>|
 |<p>**Activity thought of/performed**</p><p>Show bill at the counter and collect pizza</p>|
-|<p>**What are the user expectations?**</p><p>If the machine would have displayed user friendly error messages, it would have saved his lot of time </p><p>![](Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.026.png)</p><p>The above figure displays the final message which Tanmay received after completion of his order</p>|
+|<p>**What are the user expectations?**</p><p>If the machine would have displayed user friendly error messages, it would have saved his lot of time </p><p>![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.026.png)</p><p>The above figure displays the final message which Tanmay received after completion of his order</p>|
 
 
 

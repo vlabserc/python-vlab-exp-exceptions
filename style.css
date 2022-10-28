@@ -44,7 +44,7 @@ body{
     border-top-right-radius: 10px;
     text-align: center;
 }
-.KeyError, .IndexError, .ZeroDivisionError{
+.KeyError, .ValueError, .ZeroDivisionError{
     display: none;
 }
 .thin{
