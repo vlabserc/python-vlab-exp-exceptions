@@ -1,11 +1,14 @@
 # python-vlab-exp-exceptions
 For the experiments created for teaching the concepts of exception handling
+## Aim
+In this experiment,user will learn the concepts of exception handling
+
 **About the User:**
 
 We are going to study Exception Handling in Python from Tanmay's real world scenario.Tanmay is a fashion designer by profession and he loves designing products using human centred approach
 
 ` `Let us begin by reading Tanmay journey as  described below:
-
+## Scenario 1
 
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.001.png)|
 | :- |
@@ -23,7 +26,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 
 
 
-
+## Scenario 2
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.002.png)|
 | :- |
 |<p>**User Scenario**</p><p></p>|
@@ -38,7 +41,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 |<p>**What is the User Expectation?**</p><p>Save Time </p>|
 
 
-
+## Scenario 3
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.003.png)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
@@ -54,7 +57,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 
 
 
-
+## Scenario 4
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.004.png)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
@@ -69,7 +72,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 |<p>**What is the user's expectation?**</p><p>Order pineapple pizza and consume</p>|
 
 
-
+## Scenario 5
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.005.png)|
 | :- |
 |<p>**User Scenario**:</p><p></p>|
@@ -83,7 +86,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 |<p>**Activity thought of/Performed?**</p><p>To study more about Exceptions</p>|
 |<p>**What are the user expectations?**</p><p>To find out the answer to the question why pineapple pizza is an exception?</p>|
 
-What are exceptions in python?
+## What are exceptions in python?
 
 Now as Tanmay is more curious to learn about what is an exception? Let's learn about exceptions in python.There is one famous quote by Benjamin Franklin that “If you fail to plan, you are planning to fail”. The same is applicable for computer engineers because Every intruder finds a way to break into your code. Using Exceptions we can manage these problems in a responsible way.
 
@@ -98,7 +101,7 @@ All the scenarios explained above are examples of Exception. An Exception is a o
 
 If we look at the code displayed above, we have initialized a variable named as “marks” with the value 100, then we are trying to divide the number 100 by 0, hence the python raised an ZeroDivisionError Exception stating that you cannot divide a number by zero.
 
-**So what is the difference between an Error and an Exception?**
+## So what is the difference between an Error and an Exception?
 
 - The major difference between Errors and Exceptions are Error are the ones which cannot be handled by the programmer, whereas Exceptions are the ones which can be handled by the programmer
 
@@ -133,9 +136,9 @@ The following are the most common types of Exception:
 1) ModuleNotFoundError
 1) ImportError
 
-This article will explain about ValueError, KeyError, IndexError, ZeroDivisionError Exception in python with respect to real world problems faced by Tanmay in the self ordering machine at the pizza shop
+This article will explain about ValueError, KeyError, IndexError Exception in python with respect to real world problems faced by Tanmay in the self ordering machine at the pizza shop. The ZeroDivisionError is explained above
 
-**How to Catch Exceptions?**
+## How to Catch Exceptions?
 
 - Exceptions can be caught and handled using Try and except statements in python.
 - Statements which you feel can raise exceptions can be kept inside try block,and statements that can handle exception can be kept inside except block
@@ -146,7 +149,7 @@ Example: Let us try to access elements from a vegetables list , whose index is o
 
 From the above example, we can observe that statements that are bound to catch error are placed inside “try” statement.We can observe that the second print statement tries to access vegetable name which are present at 5th index position, but the vegetables list does not contain  anything after index 3, hence when we are trying to access element at 5th index position , it will throw an exception. This exception is caught by the “except” statement
 
-**Catching Specific Exception**
+## Catching Specific Exception
 
 - A try statement can consist of more than 1 except clause to handle multiple exceptions in the same program.
 - The general syntax for adding specific exceptions are as follows:
@@ -166,7 +169,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-
+## Scenario 6
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.011.png)|
 | :- |
 |**User Scenario:**|
@@ -182,7 +185,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-
+## Scenario 7
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.012.jpeg)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
@@ -204,7 +207,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-
+## Scenario 8
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.017.jpeg)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
@@ -220,7 +223,8 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-**Explain about keyError Exception?**
+## What is  keyError Exception?
+A python KeyError exception is raised , when you are trying to access a key that is not present in the dictionary.In the above scenario when the machine asked tanmay to enter the name of the pizza which he wanted to order? To this Tanmay entered "Vegan" pizza. Now in the dictionary there is no "vegan" pizza present, hence it raised an KeyError exception.
 
 
 
@@ -231,8 +235,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-
-
+## Scenario 9
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.019.jpeg)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
@@ -250,7 +253,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-
+## Scenario 10
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.017.jpeg)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
@@ -265,13 +268,13 @@ In the above figure, we have commented the 2nd print statement from the try clau
 |<p>**What are the user expectations?**</p><p>If the error messages would have been displayed in human friendly way it would have saved his time </p><p>![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.022.png)</p><p></p><p>Displays the exact error message which Tanmay was Expecting</p>|
 
 
-**What is ValueError Exception**
+## What is ValueError Exception?
 ValueError in python occurs when users gives an invalid value to a function but its argument is valid. For eg: when we ask python to compute square root of a negative integer, although the negative integer is a number argument , the value is invalid. In the above example the machine has asked tanmay to enter how many pizza he wishes to order? To this tanmay entered 2 in string format i.e "two" instead of entering it in numberical format. Hence the user tanmay had given an invalid value as an input, hence the value error occured. The machine expected tanmay to enter a numerical value, but instead he entered a string value. 
 
 
 
 
-
+## Scenario 11
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.023.jpeg)|
 | :- |
 |**User Scenario:**|
@@ -285,13 +288,13 @@ ValueError in python occurs when users gives an invalid value to a function but 
 |<p>**Activity thought of/Performed?**</p><p>Took help of the employee from the store </p>|
 |<p>**What are the user expectations?**</p><p>If the error messages would have been displayed in human friendly way it would have saved his time </p><p>![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.024.png)</p>|
 
-**What is IndexError Exception**
+## What is IndexError Exception
 
 IndexError Exception in python occurs when you are trying to access an index that dosent exists. In the above example each pizza is present at a certain index in a list, that index number acts as a code number for that particular pizza. In the above scenario tanmay entered an index number which is not at all present in the list and hence he got an IndexError Exception
 
 
 
-
+## Scenario 12
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.025.jpeg)|
 | :- |
 |**User Scenario:**|
@@ -307,7 +310,8 @@ IndexError Exception in python occurs when you are trying to access an index tha
 
 
 
-**Explain about finally block**
+**What is  finally block**
+The finally keyword is used with try except block. The finally block will always get executed irrespective if the try block raises an error or not
 
-
-
+|![](img/Finally_Message.png)|
+In the above figure it is shown that when tanmay finished ordering pizza, a message is displayed such as "Thank you for using this machine ,please give your ratings so that we can improve more on customer experience", this particular message will always be shown to the user at the end, irrespective of whether he utilizes self ordering machine for ordering pizza or not, because that message is put up under finally block
