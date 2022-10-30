@@ -8,7 +8,7 @@ In this experiment,user will learn the concepts of exception handling
 We are going to study Exception Handling in Python from Tanmay's real world scenario.Tanmay is a fashion designer by profession and he loves designing products using human centred approach
 
 ` `Let us begin by reading Tanmay journey as  described below:
-## Scenario 1
+## Scenario [1]
 
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.001.png)|
 | :- |
@@ -25,7 +25,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 
 
 
-## Scenario 2
+## Scenario [2]
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.002.png)|
 | :- |
 |<p>**User Scenario**</p><p></p>|
@@ -40,7 +40,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 |<p>**What is the User Expectation?**</p><p>Save Time </p>|
 
 
-## Scenario 3
+## Scenario [3]
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.003.png)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
@@ -56,7 +56,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 
 
 
-## Scenario 4
+## Scenario [4]
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.004.png)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
@@ -71,7 +71,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 |<p>**What is the user's expectation?**</p><p>Order pineapple pizza and consume</p>|
 
 
-## Scenario 5
+## Scenario [5]
 |![](img/Man_Thinking.png)|
 | :- |
 |<p>**User Scenario**:</p><p></p>|
@@ -168,7 +168,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-## Scenario 6
+## Scenario [6]
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.011.png)|
 | :- |
 |**User Scenario:**|
@@ -184,7 +184,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-## Scenario 7
+## Scenario [7]
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.012.jpeg)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
@@ -206,7 +206,7 @@ In the above figure, we have commented the 2nd print statement from the try clau
 
 
 
-## Scenario 8
+## Scenario [8]
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.017.jpeg)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
@@ -234,7 +234,7 @@ A python KeyError exception is raised , when you are trying to access a key that
 
 
 
-## Scenario 9
+## Scenario [9]
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.019.jpeg)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
@@ -252,7 +252,7 @@ A python KeyError exception is raised , when you are trying to access a key that
 
 
 
-## Scenario 10
+## Scenario [10]
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.017.jpeg)|
 | :- |
 |<p>**User Scenario:**</p><p></p>|
@@ -273,7 +273,7 @@ ValueError in python occurs when users gives an invalid value to a function but 
 
 
 
-## Scenario 11
+## Scenario [11]
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.023.jpeg)|
 | :- |
 |**User Scenario:**|
@@ -293,7 +293,7 @@ IndexError Exception in python occurs when you are trying to access an index tha
 
 
 
-## Scenario 12
+## Scenario [12]
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.025.jpeg)|
 | :- |
 |**User Scenario:**|
@@ -310,7 +310,16 @@ IndexError Exception in python occurs when you are trying to access an index tha
 
 
 **What is  finally block**
+
 The finally keyword is used with try except block. The finally block will always get executed irrespective if the try block raises an error or not
+The syntax for try except finally block is as follows:
+
+|try:<br>`	`Statement{s)<br>except:<br>`	 `Handling of Exception<br>finally:<br>`	`This block will always get executed |
+| :- |
+
+|![](img/Finally_Program.png)|
+
+In the above program we can see that KeyError Exception has occured, but inspite of that the statement written in the finally block i.e "Thank for for using this portal" is displayed to the user after execution of the program,this is because that statement is written inside finally block
 
 |![](img/Finally_Message.png)|
 In the above figure it is shown that when tanmay finished ordering pizza, a message is displayed such as "Thank you for using this machine ,please give your ratings so that we can improve more on customer experience", this particular message will always be shown to the user at the end, irrespective of whether he utilizes self ordering machine for ordering pizza or not, because that message is put up under finally block
