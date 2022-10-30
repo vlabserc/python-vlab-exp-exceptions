@@ -12,8 +12,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 
 |![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.001.png)|
 | :- |
-[1]
-|**User Scenario**:|
+|<p>**User Scenario**</p><p></p>|
 
 |It was a long holiday weekend and hence Tanmay was partying the whole sunday night and came back home at 2 AM in the midnight, he forgets to set up his alarm and wakes up late in the in the morning at 10:00 AM, usually he wakes up at 8:30 AM , now since he is running 1 hour 30 Min late , Hence he decided to pick something outside for his breakfast|
 | :- |
@@ -73,7 +72,7 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 
 
 ## Scenario 5
-|![](img/Aspose.Words.0dd41640-a2f1-45b0-868b-fbb3bdc5cfb0.005.png)|
+|![](img/Man_Thinking.png)|
 | :- |
 |<p>**User Scenario**:</p><p></p>|
 
@@ -315,3 +314,28 @@ The finally keyword is used with try except block. The finally block will always
 
 |![](img/Finally_Message.png)|
 In the above figure it is shown that when tanmay finished ordering pizza, a message is displayed such as "Thank you for using this machine ,please give your ratings so that we can improve more on customer experience", this particular message will always be shown to the user at the end, irrespective of whether he utilizes self ordering machine for ordering pizza or not, because that message is put up under finally block
+
+## References for image scenarios
+[1]https://www.dreamstime.com/cartoon-boy-waking-up-late-too-late-to-school-very-shock-seeing-alarm-clock-time-show-o-clock-kid-wake-too-late-to-image167172969
+
+[2]https://www.alamy.com/man-thinking-about-a-slice-of-pizza-a-cartoon-illustration-of-a-man-thinking-about-a-slice-of-pizza-image425761924.html
+
+[3]https://www.shutterstock.com/image-vector/pineapple-pizza-cartoon-illustration-tee-shirt-1480501454
+
+[4]https://www.dreamstime.com/man-ordering-buying-fast-food-drinks-food-court-shopping-mall-vector-illustration-man-ordering-buying-fast-food-image157242302
+
+[5]https://www.pngwing.com/en/search?q=thinking+Man
+
+[6]https://depositphotos.com/vector-images/restaurant-queue-cartoon.html
+
+[7]https://www.kioskmarketplace.com/companies/showcases/meridian/products/food-ordering-kiosks/
+
+[8]https://www.touchbistro.com/blog/why-self-ordering-kiosks-are-becoming-the-secret-weapon-for-successful-restaurants/
+
+[9]https://www.dreamstime.com/angry-businessman-guy-character-isolated-icons-cartoon-design-vector-illustration-image118223326
+
+[10]https://www.touchbistro.com/blog/why-self-ordering-kiosks-are-becoming-the-secret-weapon-for-successful-restaurants/
+
+[11]https://friendlystock.com/product/angry-man-yelling/
+
+[12]https://www.istockphoto.com/search/2/image?mediatype=illustration&phrase=happy+man
