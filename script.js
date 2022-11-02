@@ -1,118 +1,262 @@
-let experiments = ['ValueError','KeyError','IndexError','ZeroDivisionError']
-function handleSubmitValue(){
+let experiments = ['value-error', 'key-error', 'index-error', 'zero-division-error']
+function handleSubmitValue() {
     let intOption = document.getElementById("value").value
     let exceptionOption = document.getElementById("exceptionValue").value
-    let answer = document.getElementsByClassName("AnswerValue")[0]
-    if(!intOption || !exceptionOption)
+    let answer = document.getElementsByClassName("answer-value")[0]
+    if (!intOption || !exceptionOption)
         answer.innerHTML = "Select all Options"
-    else if(intOption === "int" && exceptionOption === "ValueError")
-        answer.innerHTML = "Correct! ValueError Exception will be raised\n whenever user enters anything but a number"
+    else if (intOption === "int" && exceptionOption === "ValueError")
+        answer.innerHTML = "Correct! ValueError Exception will be raised<br> whenever user enters anything but a number"
     else
         answer.innerHTML = "Incorrect! Try Again"
 }
 function handleSubmitKey() {
     let keyOption = document.getElementById("key").value
     let exceptionOption = document.getElementById("exceptionKey").value
-    let answer = document.getElementsByClassName("AnswerKey")[0]
-    if(!keyOption || !exceptionOption)
+    let answer = document.getElementsByClassName("answer-key")[0]
+    if (!keyOption || !exceptionOption)
         answer.innerHTML = "Select all Options"
-    else if(keyOption === "employee_name" && exceptionOption === "KeyError")
-        answer.innerHTML = "Correct! KeyError will be raised whenever user enters  an employee not in the database"
+    else if (keyOption === "John" && exceptionOption === "KeyError")
+        answer.innerHTML = "Correct! KeyError will be raised whenever user enters<br> an employee not in the database"
     else
         answer.innerHTML = "Incorrect! Try Again"
 }
 function handleSubmitIndex() {
-    let rangeOption = document.getElementById("range").value
-    let deleteOption = document.getElementById("delete").value
-    let exceptionOption = document.getElementById("exceptionIndex").value
-    let answer = document.getElementsByClassName("AnswerIndex")[0]
-    if(!deleteOption || !exceptionOption || !rangeOption)
+    let exceptionOption = document.getElementById("exception-index").value
+    let exceptionOption2 = document.getElementById("exception-index2").value
+    let index = document.getElementById("index").value
+    let answer = document.getElementsByClassName("answer-index")[0]
+    if (!exceptionOption || !exceptionOption2 || !index)
         answer.innerHTML = "Select all Options"
-    else if(rangeOption === "range(len(arr))" && exceptionOption === "IndexError" && deleteOption === "del arr[i]")
-        answer.innerHTML = "Correct! IndexError will be raised and caught as soon as all elements in the array are processed."
+    else if (exceptionOption === "IndexError" && exceptionOption2 === "ValueError" && index === "-1")
+        answer.innerHTML = "Correct! IndexError will be raised whenever index is out of<br> range and ValueError when index is anything but a number"
     else
         answer.innerHTML = "Incorrect! Try Again"
 }
+
+function handleSubmitZero() {
+    let exceptionOption = document.getElementById("exception-zero").value
+    let people = document.getElementById("people").value
+    let answer = document.getElementsByClassName("answer-zero")[0]
+    if (!exceptionOption || !people)
+        answer.innerHTML = "Select all Options"
+    else if (people == "-1")
+        answer.innerHTML = "Incorrect! Number of people to split cannot be negative"
+    else if (exceptionOption === "ZeroDivisionError" && people === "3")
+        answer.innerHTML = "Correct! ZeroDivisionError will be raised whenever<br> number of people is 0"
+    else
+        answer.innerHTML = "Incorrect! Try Again"
+}
+
 function Refresh() {
     location.reload();
 }
-function changeExperiment(){
+function changeExperiment() {
     let experiment = document.getElementById("exception-name").value
     experiments.forEach(exp => {
         let elements = document.getElementsByClassName(exp)
-        if(exp === experiment){
+        if (exp === experiment) {
             elements[0].style.display = 'block'
             elements[1].style.display = 'block'
-        }else{
+        } else {
             elements[0].style.display = 'none'
             elements[1].style.display = 'none'
         }
     });
-    
+
 }
-function TestValueError(){
-    var x = document.getElementById("num").value;
-    if(!isNaN(x) && !isNaN(parseInt(x))){
-        document.getElementById("demoValue").innerHTML = `ValueError: invalid literal for int() with base 10: '${x}'`;
-        document.getElementById("rewardValue").innerHTML = "You are an exception master!";
+
+function testValueError() {
+    let x = document.getElementById("num").value;
+    let hap = document.getElementById("hap-value")
+    let sho = document.getElementById("sho-value")
+    let ok = document.getElementById("ok-value")
+    let demo = document.getElementById("demo-value")
+    let reward = document.getElementById("reward-value")
+    let refresh = document.getElementById("refresh-value")
+    ok.style.display = 'none'
+    event.currentTarget.value = "";
+    if (isNaN(x) || isNaN(parseInt(x))) {
+        demo.innerHTML = `ValueError: invalid literal for int() with base 10: '${x}'`;
+        reward.innerHTML = "You are an exception master!";
+        refresh.style.display = 'none';
+        hap.style.display = 'block';
+        sho.style.display = 'none';
+        animateValue(1)
         return
     }
     x = parseInt(x)
-    if (!(x>=0)) {
-        document.getElementById("demoValue").innerHTML = "ValueError: math domain error";
-        document.getElementById("rewardValue").innerHTML = "You are an exception master!";
-        document.getElementById("refreshValue").style.display='none';
+    if (!(x >= 0)) {
+        demo.innerHTML = "ValueError: math domain error";
+        reward.innerHTML = "You are an exception master!";
+        refresh.style.display = 'none';
+        hap.style.display = 'block';
+        sho.style.display = 'none';
+        animateValue(1)
     }
     else {
-        document.getElementById("demoValue").innerHTML = "Square Root of " + x + " is "+ Math.sqrt(x);
-        document.getElementById("rewardValue").innerHTML = "You need a little more rebellion. Try again!";
-        document.getElementById("refreshValue").style.display='block';
+        demo.innerHTML = "Square Root of " + x + " is " + Math.sqrt(x);
+        reward.innerHTML = "You need a little more rebellion. Try again!";
+        refresh.style.display = 'block';
+        sho.style.display = 'block';
+        hap.style.display = 'none';
+        animateValue(0)
     }
-    event.currentTarget.value = "";
 }
-function TestIndexError(){
-    var x = document.getElementById("index").value;
-    if(!/^-?\d+$/.test(x)){ // Checking if it is a number or not
-        document.getElementById("demoIndex").innerHTML = `ValueError: invalid literal for int() with base 10: '${x}'`;
-        document.getElementById("rewardIndex").innerHTML = "You generated a ValueError. Try Again!";
-        document.getElementById("refreshIndex").style.display='block';
-    }else{
+
+function testIndexError() {
+    let x = document.getElementById("bucket").value;
+    let hap = document.getElementById("hap-index")
+    let sho = document.getElementById("sho-index")
+    let ok = document.getElementById("ok-index")
+    let demo = document.getElementById("demo-index")
+    let reward = document.getElementById("reward-index")
+    let refresh = document.getElementById("refresh-index")
+    if (isNaN(x) || isNaN(parseInt(x))) { // Checking if it is a number or not
+        demo.innerHTML = `ValueError: invalid literal for int() with base 10: '${x}'`;
+        reward.innerHTML = "You generated a ValueError. Try Again!";
+        refresh.style.display = 'block';
+        sho.style.display='block';
+        hap.style.display='none';
+    } else {
         x = parseInt(x)
-        if (x >= 9 || x < -9) {
-            document.getElementById("demoIndex").innerHTML = "IndexError: list index out of range";
-            document.getElementById("rewardIndex").innerHTML = "You are an exception master!";
-            document.getElementById("refreshIndex").style.display='none';
+        if (x >= 3 || x < -3) {
+            demo.innerHTML = "IndexError: list index out of range";
+            hap.style.display = "block";
+            reward.innerHTML = "You are an exception master!";
+            refresh.style.display = 'none';
+            animateIndex(0);
         }
         else {
-            fibonacci = [1,1,2,3,5,8,13,21,34]
+            demo.innerHTML = "";
+            reward.innerHTML = "You need a little more rebellion. Try again!";
+            refresh.style.display = 'block';
+            sho.style.display='block';
+            hap.style.display='none';
             if(x >= 0)
-                document.getElementById("demoIndex").innerHTML = `${fibonacci[x]} is requested number`;
+                animateIndex(x+1)
             else
-                document.getElementById("demoIndex").innerHTML = `${fibonacci[x+9]} is requested number`;
-            document.getElementById("rewardIndex").innerHTML = "You need a little more rebellion. Try again!";
-            document.getElementById("refreshIndex").style.display='block';
+                animateIndex(x+4);
         }
     }
     event.currentTarget.value = "";
 }
-function TestKeyError(){
-    let name = document.getElementById("name").value
-    let age = -1
-    if(name == 'John')
-    age = 30
-    else if(name == 'Adam')
-    age = 28
-    else if(name == 'Jack')
-    age = 37
-    console.log(age)
-    if(age == -1){
-        document.getElementById("demoKey").innerHTML = "KeyError: '" + name+"'";
-        document.getElementById("rewardKey").innerHTML = "You are an exception master!";
-        document.getElementById("refreshKey").style.display='none';
-    }else{
-        document.getElementById("demoKey").innerHTML = "Age of " + name + " is " + age;
-        document.getElementById("rewardKey").innerHTML = "You need a little more rebellion. Try again!";
-        document.getElementById("refreshKey").style.display='block';
+
+
+function testKeyError() {
+    let x = document.getElementById("gen-key").value;
+    document.getElementById("ok-key").style.display = 'none';
+    if (!(x === 'blue' || x === 'green' || x === 'red')) {
+        document.getElementById("demo-key").innerHTML = "KeyError: " + x;
+        document.getElementById("reward-key").innerHTML = "You are an exception master!";
+        document.getElementById("hap-key").style.display = 'block';
+        animateKey(0)
+    }
+    else {
+        document.getElementById("reward-key").innerHTML = "You need a little more rebelion. Try again!";
+        document.getElementById("refresh-key").style.display = 'block';
+        document.getElementById("sho-key").style.display = 'block';
+        document.getElementById("hap-key").style.display = 'none';
+        console.log(x)
+        animateKey(x)
     }
     event.currentTarget.value = "";
+}
+
+function animateValue(i) {
+    if (i == 1) {
+        anime({
+            targets: '#ball-value',
+            translateY: -100,
+            rotate: '2turn',
+            loop: 6,
+            direction: 'alternate',
+            duration: 500,
+            easing: 'easeInOutSine',
+        })
+    } else {
+        anime({
+            targets: '#pivot-value, #ball-value',
+            rotate: [0, 180],
+            duration: 3000,
+            easing: 'easeInOutSine',
+        })
+    }
+}
+function animateKey(i) {
+    if (i == 0) {
+        anime({
+            targets: '#pivot-key, #ball-key',
+            translateY: -100,
+            loop: 6,
+            direction: 'alternate',
+            duration: 500,
+            easing: 'easeInOutSine',
+        })
+    } else {
+        if (i == 'blue') {
+            document.getElementById("pivot-key").style.width = '28%';
+            anime({
+                targets: '#pivot-key, #ball-key',
+                rotate: [0, 180],
+                duration: 3000,
+                easing: 'easeInOutSine',
+            })
+        } else if (i == 'green') {
+            document.getElementById("pivot-key").style.width = '57%';
+            anime({
+                targets: '#pivot-key, #ball-key',
+                rotate: [0, 180],
+                duration: 3000,
+                easing: 'easeInOutSine',
+            })
+        } else {
+            document.getElementById("pivot-key").style.width = '85%';
+            anime({
+                targets: '#pivot-key, #ball-key',
+                rotate: [0, 180],
+                duration: 3000,
+                easing: 'easeInOutSine',
+            })
+        }
+    }
+}
+
+function animateIndex(i){
+    if(i==0){
+        anime({
+            targets: '#piv-index, #ball-index',
+            translateY: -100,
+            loop: 6,
+            direction: 'alternate',
+            duration: 500,
+            easing: 'easeInOutSine',
+        })
+    } else {
+        if(i==1) {
+            document.getElementById("piv-index").style.width='28%';
+            anime({
+                targets: '#piv-index, #ball-index',
+                rotate: [0,180],
+                duration: 3000,
+                easing: 'easeInOutSine',
+            })
+        } else if (i==2) {
+            document.getElementById("piv-index").style.width='57%';
+            anime({
+                targets: '#piv-index, #ball-index',
+                rotate: [0,180],
+                duration: 3000,
+                easing: 'easeInOutSine',
+            })
+        } else {
+            document.getElementById("piv-index").style.width='85%';
+            anime({
+                targets: '#piv-index, #ball-index',
+                rotate: [0,180],
+                duration: 3000,
+                easing: 'easeInOutSine',
+            })
+        }
+    }
 }
