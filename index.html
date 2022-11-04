@@ -63,7 +63,7 @@ try:
 		<option hidden disabled selected value></option>
 		<option value="str">str</option>
 		<option value="int">int</option>
-		<option value="float">float</option>
+		<option value="bool">bool</option>
 	</select></div>(input)
     average_marks = total_marks/number_of_students
 	
@@ -89,7 +89,7 @@ except <div class="nocode exception"><select autocomplete="off" name="Exception"
 	"green": 1,
 	"red": 2
 }
->>> paint = int(input("What color do you want to paint the ball?: "))
+>>> paint = int(input("Paint the ball: "))
 <input type="text" id="gen-key" onchange="testKeyError()"/>
 >>> bucket_id = paint_buckets[paint]
 >>> ball = paint_buckets[bucket_id]
@@ -209,7 +209,21 @@ except <div class="nocode exception"><select autocomplete="off" name="exception-
 
 		<div class="zero-division-error box">
 			<h4 class="header">Generate an Exception</h4>
-
+			<p>Can you generate an ZeroDivision Error? </p>
+                <pre class="prettyprint code lang-py" style="border: none;">
+>>> num_balls = 10
+>>> division_bucket = int(input("Let's do modulus: "))
+<input type="text" id="zero" onchange="testZeroError()"/>
+>>> rem_balls = num_balls % division_bucket
+>>> print("{num_balls} % {division_bucket} is {rem_balls}.")
+                    <p id="demo-zero"></p>
+                </pre>
+                <div id="reward-zero"></div>
+                <button id="refresh-zero" onclick="window.location.reload()" style="display: none">Try Again?</button>
+            <div id="pivot-zero" class="pivot">
+                <div class="b1" id="ball-zero"><div id="dividend" class="dividend">10</div></div>
+            </div>
+            <div class="bucket" id="bucket-zero"><div id="division" class="division" style="display: none"></div></div>
 		</div>
 
 		<div class="zero-division-error box">

@@ -5,6 +5,8 @@ function handleSubmitValue() {
     let answer = document.getElementsByClassName("answer-value")[0]
     if (!intOption || !exceptionOption)
         answer.innerHTML = "Select all Options"
+    else if (intOption != "int")
+        answer.innerHTML = "Incorrect! Wrong Data Type"
     else if (intOption === "int" && exceptionOption === "ValueError")
         answer.innerHTML = "Correct! ValueError Exception will be raised<br> whenever user enters anything but a number"
     else
@@ -16,6 +18,8 @@ function handleSubmitKey() {
     let answer = document.getElementsByClassName("answer-key")[0]
     if (!keyOption || !exceptionOption)
         answer.innerHTML = "Select all Options"
+    else if(keyOption == 'Karthik' || keyOption == 'JAMES')
+        answer.innerHTML = "Incorrect! Key given to the dictionary is wrong"
     else if (keyOption === "John" && exceptionOption === "KeyError")
         answer.innerHTML = "Correct! KeyError will be raised whenever user enters<br> an employee not in the database"
     else
@@ -28,6 +32,10 @@ function handleSubmitIndex() {
     let answer = document.getElementsByClassName("answer-index")[0]
     if (!exceptionOption || !exceptionOption2 || !index)
         answer.innerHTML = "Select all Options"
+    else if (index == "p")
+        answer.innerHTML = "Incorrect! Index has to be a number"
+    else if (index == "10")
+        answer.innerHTML = "Incorrect! Index cannot be greater than length of array"
     else if (exceptionOption === "IndexError" && exceptionOption2 === "ValueError" && index === "-1")
         answer.innerHTML = "Correct! IndexError will be raised whenever index is out of<br> range and ValueError when index is anything but a number"
     else
@@ -42,6 +50,8 @@ function handleSubmitZero() {
         answer.innerHTML = "Select all Options"
     else if (people == "-1")
         answer.innerHTML = "Incorrect! Number of people to split cannot be negative"
+    else if (people == "-1")
+        answer.innerHTML = "Incorrect! Split cannot be done between 0 people"
     else if (exceptionOption === "ZeroDivisionError" && people === "3")
         answer.innerHTML = "Correct! ZeroDivisionError will be raised whenever<br> number of people is 0"
     else
@@ -163,6 +173,27 @@ function testKeyError() {
     event.currentTarget.value = "";
 }
 
+function testZeroError() {
+    var x = document.getElementById("zero").value;
+    document.getElementById("division").innerHTML = ""+x;
+    document.getElementById("division").style.display='block';
+    // console.log(x)
+    if (x==0) {
+        document.getElementById("demo-zero").innerHTML = "ZeroDivisionError";
+        document.getElementById("reward-zero").innerHTML = "You are an exception master!";
+        document.getElementById("refresh-zero").style.display='none';
+        animateZero(0)
+    }
+    else {
+        document.getElementById("reward-zero").innerHTML = "You need a little more rebelion. Try again!";
+        document.getElementById("refresh-zero").style.display='block';
+        animateZero(x)
+        if(Number(x)>10) {document.getElementById("dividend").innerHTML=10;}
+        else {document.getElementById("dividend").innerHTML=10%x;}
+    }
+    event.currentTarget.value = "";
+}
+
 function animateValue(i) {
     if (i == 1) {
         anime({
@@ -258,5 +289,25 @@ function animateIndex(i){
                 easing: 'easeInOutSine',
             })
         }
+    }
+}
+
+function animateZero(i){
+    if(i==0){
+        anime({
+            targets: '#pivot-zero, #ball-zero',
+            translateY: -100,
+            loop: 6,
+            direction: 'alternate',
+            duration: 500,
+            easing: 'easeInOutSine',
+        })
+    } else {
+        anime({
+            targets: '#pivot-zero, #ball-zero',
+            translateX: '120%',
+            duration: 500,
+            easing: 'easeInOutSine',
+        })
     }
 }

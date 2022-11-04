@@ -150,3 +150,50 @@ body{
 .i1{
     translate: -3rem;
 }
+
+#pivot-zero {
+    float: right;
+    position: relative;
+    left: -50%;
+    width: 50%;
+}
+#ball-zero {
+    background: #fcba03;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 100%;
+    color: #000000;
+    font-weight: bolder;
+    text-align: center;
+    translate: 0 150%;
+}
+.dividend {
+    color: #000000;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+#bucket-zero {
+    background: #000000;
+    width: 25%;
+    height: 50px;
+    float: right;
+    position: relative;
+    left: 2%;
+    border-radius: .2rem .2rem .2rem .2rem;
+    border-bottom: 0.3rem solid rgb(90, 85, 85);
+    border-top: 0.3rem solid rgb(90, 85, 85);
+    opacity: 0.7;
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: center;
+}
+.division {
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
