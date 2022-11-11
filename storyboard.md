@@ -159,9 +159,9 @@ Image 6 describes that Now since Tanmay has learnt about Exception,he understood
 
 ## Scenario Image 7-12
 
-|<p>7</p><p>![](Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.001.jpeg)</p>|8![](Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.002.jpeg)|9![](Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.003.jpeg)|
+|<p>7</p><p>![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.001.jpeg)</p>|8![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.002.jpeg)|9![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.003.jpeg)|
 | :- | :- | :- |
-|<p>10</p><p>![](Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.004.jpeg)</p>|<p>11</p><p>![](Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.005.jpeg)</p>|<p>12</p><p>![](Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.006.jpeg)</p>|
+|<p>10</p><p>![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.004.jpeg)</p>|<p>11</p><p>![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.005.jpeg)</p>|<p>12</p><p>![](images/Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.006.jpeg)</p>|
 
 Image 7 describes that in order to avoid long queues,  tanmay decided to utilize the self ordering machines which are placed by the pizza hut on their Entrance.When he started ordering using the self ordering machine,initially he gets the following message as described stepwise  below:
 
