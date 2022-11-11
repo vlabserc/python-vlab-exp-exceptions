@@ -157,7 +157,7 @@ KeyError occured,you are trying to access value of key which does not exists in 
 In the above figure, we have commented the 2nd print statement from the try clause, hence KeyError exception got executed
 Image 6 describes that Now since Tanmay has learnt about Exception,he understood the basic terminologies of Exception. Now, since he was very hungry he decided to head to the “pizza hut” store, since that store is very close to his office, so he thinks that he can grab a pizza from there and eat it at his office while working(during short-breaks).When he went to the pizza hut store he observed that there was a long queue at the ordering counter 
 
-## Scenario [7]-[12]
+## Scenario Image 7-12
 
 |<p>[7]</p><p>![](Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.001.jpeg)</p>|[8]![](Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.002.jpeg)|[9]![](Aspose.Words.334cd874-3028-4f44-b81c-fcad45c04dfa.003.jpeg)|
 | :- | :- | :- |
