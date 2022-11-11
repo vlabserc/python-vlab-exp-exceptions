@@ -4,13 +4,13 @@ We are going to study Exception Handling in Python from Tanmay's real world scen
 
 ` `Let us begin by reading Tanmay journey as  described below:
 
-## Scenario [1]-[6]
+## Scenario Image 1-6
 
-| [1]![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.001.png) | [2]![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.002.png) | [3]![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.003.png) |
+| 1![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.001.png) | 2![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.002.png) | 3![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.003.png) |
 | :-: | :-: | :-: |
-|[4]![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.004.png)|[5]![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.005.png)|[6]![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.006.png)|
+|4![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.004.png)|5![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.005.png)|6![](images/Aspose.Words.593369eb-b8e0-426a-ac44-4668e69d30d6.006.png)|
 
-Image[1] describes that It was a long holiday weekend and hence Tanmay was partying the whole sunday night and came back home at 2 AM in the midnight, he forgets to set up his alarm and wakes up late in the in the morning at 10:00 AM, usually he wakes up at 8:30 AM , now since he is running 1 hour 30 Min late , Hence he decided to pick something outside for his breakfast. Image[2] describes that As Tanmay is an Italian food lover, he decides to have pizza for his breakfast because he thought that pizza would take less preparation time and he can have pizza while travelling to the office in his car.So, He visits a nearby store to eat pizza. Image [3] describes that Tanmay has heard a lot of craze about “pineapple on pizza”, so he decided to order pineapple pizza.Image [4] describes that At the ordering counter, When Tanmay asks for pineapple pizza, the waiter politely denies that there is no such thing termed as “pineapple pizza” exists in their store, and in fact the waitress also says that no one except tanmay has enquired for pineapple pizza and hence she said that “pineapple pizza is an **exception**!”. Image [5] describes that Since pineapple pizza was not available at the store,Tanmay was sad, but he suddenly started thinking about the waitress word i.e Exception . He started thinking about what is an exception? And then decides to study more about exception
+Image 1 describes that It was a long holiday weekend and hence Tanmay was partying the whole sunday night and came back home at 2 AM in the midnight, he forgets to set up his alarm and wakes up late in the in the morning at 10:00 AM, usually he wakes up at 8:30 AM , now since he is running 1 hour 30 Min late , Hence he decided to pick something outside for his breakfast. Image 2 describes that As Tanmay is an Italian food lover, he decides to have pizza for his breakfast because he thought that pizza would take less preparation time and he can have pizza while travelling to the office in his car.So, He visits a nearby store to eat pizza. Image 3 describes that Tanmay has heard a lot of craze about “pineapple on pizza”, so he decided to order pineapple pizza.Image 4 describes that At the ordering counter, When Tanmay asks for pineapple pizza, the waiter politely denies that there is no such thing termed as “pineapple pizza” exists in their store, and in fact the waitress also says that no one except tanmay has enquired for pineapple pizza and hence she said that “pineapple pizza is an **exception**!”. Image 5 describes that Since pineapple pizza was not available at the store,Tanmay was sad, but he suddenly started thinking about the waitress word i.e Exception . He started thinking about what is an exception? And then decides to study more about exception
 
 Now let us study more about exceptions in python!
 
@@ -155,6 +155,7 @@ KeyError occured,you are trying to access value of key which does not exists in 
 ```
 
 In the above figure, we have commented the 2nd print statement from the try clause, hence KeyError exception got executed
+Image 6 describes that Now since Tanmay has learnt about Exception,he understood the basic terminologies of Exception. Now, since he was very hungry he decided to head to the “pizza hut” store, since that store is very close to his office, so he thinks that he can grab a pizza from there and eat it at his office while working(during short-breaks).When he went to the pizza hut store he observed that there was a long queue at the ordering counter 
 
 ## Scenario [7]-[12]
 
