@@ -3,14 +3,23 @@ const replaceTabWithSpaces = (code) => {
 };
 
 const code = document.getElementById("code");
-const defaultCode =
-  "try:\n\tx = 1\nexcept:\n\t# Write Your code here\nelse:\n\tprint('No exception occured')\nfinally:\n\tprint('We always do this')";
+const defaultCode = 
+  "total_marks = 468\ntry:\n\tinput = '10'\n\tnumber_of_students = # Enter anything\n\taverage_marks = total_marks/number_of_students\nexcept ValueError:\n\tprint('Number of students has to be an Integer')\nfinally:\n\tprint('Found the average marks')";
+
 let disableEditingRange = [
   [1, 3] /* line 1 to 3 */,
   [5, -1] /* line 5 to end */,
 ];
 
 code.value = replaceTabWithSpaces(defaultCode);
+
+
+const editor = CodeMirror.fromTextArea(code, {
+  lineNumbers: false,
+  mode: "python",
+  lineWrapping: false,
+  //readOnly: "cursor",
+}); 
 
 document.addEventListener("select", (event) => {
   console.log(code.selectionStart, code.selectionEnd);
