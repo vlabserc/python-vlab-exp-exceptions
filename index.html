@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<title> Exception Handling </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -12,7 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css" />
 	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-<-- <script src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script> -->
 	<script type="text/javascript">
 		window.languagePluginUrl = 'https://cdn.jsdelivr.net/pyodide/v0.16.1/full/';
 	</script>
@@ -27,7 +27,6 @@
 			background-color: #f5f5f5;
 		}
 	</style>
-	
 </head>
 
 <body>
@@ -70,21 +69,22 @@
 			<div id="bucket-value" class="bucket"></div>
 		</div>
 
+
 		<div class="value-error box">
 			<h4 class="header">Applications of Exception Handling</h4>
         <textarea id='code' name='code' rows='9' style='width: 98.8%;'>	
         </textarea>
-
         <button id='run'>Run</button>
-        <button id='stop'>Stop</button>
+        <button id='stop' disabled>Stop</button>
         <br />
         <br />
 		
         <div> Output </div>
-        <textarea id='output' style='width: 98.8%;' rows='3' disabled></textarea>
+        <textarea id='output' style='width: 100%;' rows='3' disabled></textarea>
     </div>
 
-    <script type="module" src="editor/js/editor.js"></script>
+    <!-- script src="js/editor.js"></script> -->
+    <script type="module" src="js/pyodide.js"></script>
 
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
@@ -93,7 +93,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
         integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src='editor/js/editor.js'></script>
+    <script src='js/editor.js'></script>
+
 
 		<div class="key-error box">
 			<h4 class="header">Generate an Exception</h4>
@@ -270,7 +271,7 @@ except <div class="nocode exception"><select autocomplete="off" name="exception-
 
 	</main>
 
-	<script src="editor/js/editor.js"></script>
+	<script src="./script.js"></script>
 </body>
 
 </html>
