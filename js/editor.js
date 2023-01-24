@@ -15,7 +15,7 @@ let defaultCode = {
   "value-error":
     "total_marks = 468\ntry:\n\tinput = '10'\n\tnumber_of_students = # Enter anything\n\taverage_marks = total_marks/number_of_students\nexcept ValueError:\n\tprint('Number of students has to be an Integer')\nfinally:\n\tprint('Found the average marks')",
   "key-error":
-    "marks = {'Maths': 90, 'Science': 80, 'English': 70}\ntry:\n\tprint(marks['Social'])\nexcept KeyError:\n\tprint('Social is not a subject')\nfinally:\n\tprint('Found the average marks')",
+    "IDs = {'Adyansh':1,'Karthik':2,'Pratistha':3}\ntry:\n\temployee_id = IDs['Karthik']\n\tprint(f'ID is {employee_id}')\nexcept KeyError:\n\tprint('Employee not found')\nfinally:\n\tprint('Found the employee ID')",
   "index-error":
     "marks = [90, 80, 70]\ntry:\n\tprint(marks[3])\nexcept IndexError:\n\tprint('Index out of range')\nfinally:\n\tprint('Found the average marks')",
   "zero-division-error":
