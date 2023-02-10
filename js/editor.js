@@ -13,13 +13,13 @@ const code = document.getElementById("code");
 
 let defaultCode = {
   "value-error":
-    "total_marks = 468\ntry:\n\tinput = '10'\n\tnumber_of_students = # Enter anything\n\taverage_marks = total_marks/number_of_students\nexcept ValueError:\n\tprint('Number of students has to be an Integer')",
+    "total_marks = 468\ntry:\n\tinput = 10\n\tnumber_of_students = 5\n\taverage_marks = total_marks/number_of_students\n\tprint('Average marks = ', average_marks)\nexcept ValueError:\n\tprint('Number of students has to be an Integer')",
   "key-error":
-    "IDs = {'Adyansh':1,'Karthik':2,'Pratistha':3}\ntry:\n\temployee_id = IDs['#Enter any name']\n\tprint(f'Employee ID is {employee_id}')\nexcept KeyError:\n\tprint('Employee not found')",
+    "IDs = {'Adyansh':1,'Karthik':2,'Pratistha':3}\ntry:\n\temployee_id = IDs['Adyansh']\n\tprint(f'Employee ID is {employee_id}')\nexcept KeyError:\n\tprint('Employee not found')",
   "index-error":
-    "array = [1,123,1,2,5,14,2,41,5,1]\ntry:\n\tindex = #Enter anything\n\tvalue = 50\n\tarray[index] = value\nexcept IndexError:\n\tprint('Index does not exist')\nexcept ValueError:\n\tprint('Please enter numbers only')",
+    "array = [1,123,1,2,5,14,2,41,5,1]\ntry:\n\tindex = -1\n\tvalue = 50\n\tarray[index] = value\nexcept IndexError:\n\tprint('Index does not exist')\nexcept ValueError:\n\tprint('Please enter numbers only')",
   "zero-division-error":
-    "total_bill = 1000\ntry:\n\tnumber_of_people = #Enter anything\n\tsplit = total_bill/number_of_people\n\tprint(f'Each of you has to pay ${split}')\nexcept ZeroDivisionError:\n\tprint('Split cannot be done between 0 people')",
+    "total_bill = 1000\ntry:\n\tnumber_of_people = 0\n\tsplit = total_bill/number_of_people\n\tprint(f'Each of you has to pay ${split}')\nexcept ZeroDivisionError:\n\tprint('Split cannot be done between 0 people')",
 };
 
 code.value = defaultCode[selectedExp];
