@@ -17,7 +17,7 @@ let defaultCode = {
   "key-error":
     "IDs = {'Adyansh':1,'Karthik':2,'Pratistha':3}\ntry:\n\temployee_id = IDs['Adyansh']\n\tprint(f'Employee ID is {employee_id}')\nexcept KeyError:\n\tprint('Employee not found')",
   "index-error":
-    "array = [1,123,1,2,5,14,2,41,5,1]\ntry:\n\tindex = -1\n\tvalue = 50\n\tarray[index] = value\nexcept IndexError:\n\tprint('Index does not exist')\nexcept ValueError:\n\tprint('Please enter numbers only')",
+    "array = [1,123,1,2,5,14,2,41,5,1]\ntry:\n\tindex = 6\n\tprint(array[index])\nexcept IndexError:\n\tprint('Index does not exist')\nexcept ValueError:\n\tprint('Please enter numbers only')",
   "zero-division-error":
     "total_bill = 1000\ntry:\n\tnumber_of_people = 0\n\tsplit = total_bill/number_of_people\n\tprint(f'Each of you has to pay ${split}')\nexcept ZeroDivisionError:\n\tprint('Split cannot be done between 0 people')",
 };
