@@ -49,10 +49,6 @@ body{
 .thin{
     width: 20rem;
 }
-.code{
-    border: none !important;
-    margin-top: 1.5rem;
-}
 .answer-index, .answer-value, .answer-key{
     margin: 10px 3px;
     text-align: center;
@@ -115,6 +111,10 @@ body{
 }
 .right {
     right: 2px;
+}
+
+.code {
+    color: red;
 }
 .bucket {
     background: #000000;
