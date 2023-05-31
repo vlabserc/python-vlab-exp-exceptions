@@ -13,6 +13,30 @@
             "difficulty": "beginner"
         },
         {
+            "question": "Which of the following is not a built-in exception in Python?",
+            "answers": {
+                "a": "ValueError",
+                "b": "TypeError",
+                "c": "ZeroDivisionError",
+                "d": "RangeError"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Which keyword is used to raise an exception manually in Python?",
+            "answers": {
+                "a": "try",
+                "b": "except",
+                "c": "raise",
+                "d": "finally"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        
+        
+        {
             "question": "Which of the following scenario holds true with respect to the finally block execution",
             "answers": {
                 "a": "Finally block always gets executed irrespective of the errors and exceptions",
