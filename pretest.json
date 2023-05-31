@@ -47,6 +47,20 @@
             "correctAnswer": "a",
             "difficulty": "advanced"
         },
+         {
+            "question": "What is the difference between the "try/except" and "try/finally" blocks in exception handling in Python?",
+            "answers": {
+                "a": "The "try/except" block is used to catch and handle exceptions, while the "try/finally" block is used for cleanup operations.",
+                "b": " The "try/except" block is used to ensure a specific block of code is always executed, while the "try/finally" block is used to catch and handle exceptions.",
+                "c": "The "try/except" block is used to raise an exception manually, while the "try/finally" block is used to define code that will always execute.",
+                "d": "None of the above"
+            },
+            "correctAnswer": "a",
+            "difficulty": "advanced"
+        },
+        
+        
+        
         {
             "question": "Which of the following error occurs when the user enters an invalid input?",
             "answers": {
@@ -69,6 +83,18 @@
             "correctAnswer": "b",
             "difficulty": "intermediate"
         },
+        {
+            "question": "Which of the following is not a common built-in exception in Python?",
+            "answers": {
+                "a": "ValueError",
+                "b": "IndexError",
+                "c": "FileNotFoundError",
+                "d": "FileExistsError"
+            },
+            "correctAnswer": "d",
+            "difficulty": "intermediate"
+        },
+        
         {
             "question": "When the programmer is trying to import modules in his program which he have bever created is an example of which error?",
             "answers": {
