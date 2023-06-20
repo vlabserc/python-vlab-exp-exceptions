@@ -46,7 +46,7 @@
             "explanations": {
                                 "a": "This option is incorrect. The try keyword is used in conjunction with the except keyword to handle exceptions and is not used for manually raising exceptions.",
                                 "b": "This option is incorrect. The except keyword is used to catch and handle exceptions when they occur, not to raise exceptions manually.",
-                                "c": "This option is correct. The "raise" keyword is used to manually raise an exception in Python. It is followed by the exception type or instance that you want to raise.",
+                                "c": "This option is correct. The raise keyword is used to manually raise an exception in Python. It is followed by the exception type or instance that you want to raise.",
                                 "d": "This option is incorrect. The finally keyword is used in exception handling to define a block of code that will be executed regardless of whether an exception occurred or not. It is not used to raise exceptions."
       },
             "correctAnswer": "c",
