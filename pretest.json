@@ -5,10 +5,16 @@
             "question": "What is the difference between Error and Exceptions?",
             "answers": {
                 "a": "Errors can be handled by the programmer, whereas exceptions cannot be handled",
-                "b": "Exceptions can be handled by the programmer, errors cannot be handled",
+                "b": "Errors are fatal and cannot be handled, while exceptions are non-fatal and can be caught and handled.",
                 "c": "Errors can be handled using try except block, whereas exceptions cannot be handled using try except block",
                 "d": "None of the above"
             },
+            "explanations": {
+                                "a": "This statement is incorrect. Errors and exceptions both can be handled by the programmer. In Python, you can handle exceptions using try-except blocks to catch and handle specific types of exceptions.",
+                                "b": "This option is partially correct. Errors are typically more severe and may not be recoverable, while exceptions can be caught and handled using try-except blocks. However, it is important to note that not all errors are necessarily fatal, and exceptions can also be fatal if not handled properly.",
+                                "c": "This statement is incorrect. Both errors and exceptions can be handled using try-except blocks. In fact, try-except blocks are commonly used to handle exceptions by catching and handling specific types of exceptions. ",
+                                "d": "This option is incorrrect"
+      },
             "correctAnswer": "b",
             "difficulty": "beginner"
         },
@@ -20,6 +26,12 @@
                 "c": "ZeroDivisionError",
                 "d": "RangeError"
             },
+            "explanations": {
+                                    "a": "This option is incorrect. ValueError is a built-in exception in Python. It is raised when a function receives an argument of the correct type but an inappropriate value.",
+                                    "b": "This option is incorrect. TypeError is a built-in exception in Python. It is raised when an operation or function is applied to an object of an inappropriate type.",
+                                    "c": "This option is incorrect. ZeroDivisionError is a built-in exception in Python. It is raised when attempting to divide a number by zero.",
+                                    "d": "This option is correct. RangeError is not a built-in exception in Python. In Python, the equivalent exception for handling index out of range errors is IndexError."
+      },
             "correctAnswer": "d",
             "difficulty": "beginner"
         },
@@ -31,6 +43,12 @@
                 "c": "raise",
                 "d": "finally"
             },
+            "explanations": {
+                                "a": "This option is incorrect. The try keyword is used in conjunction with the except keyword to handle exceptions and is not used for manually raising exceptions.",
+                                "b": "This option is incorrect. The except keyword is used to catch and handle exceptions when they occur, not to raise exceptions manually.",
+                                "c": "This option is correct. The "raise" keyword is used to manually raise an exception in Python. It is followed by the exception type or instance that you want to raise.",
+                                "d": "This option is incorrect. The finally keyword is used in exception handling to define a block of code that will be executed regardless of whether an exception occurred or not. It is not used to raise exceptions."
+      },
             "correctAnswer": "c",
             "difficulty": "beginner"
         },
@@ -44,8 +62,14 @@
                 "c": "Finally block gets executed only when there is an exception in your program",
                 "d": "None of the above"
             },
+            "explanations": {
+                                "a": "This option is correct. The finally block is used to define a block of code that will be executed regardless of whether an exception occurred or not. It ensures that certain cleanup or termination actions are performed, regardless of whether an exception is raised or not.",
+                                "b": "This option is incorrect. The finally block is executed even if there are errors or exceptions in the program. Its execution is not dependent on the presence or absence of errors.",
+                                "c": "This option is incorrect. The finally block is executed regardless of whether there is an exception or not. It is not limited to only exception cases.",
+                                "d": "This option is incorrect. The correct answer is option a, as explained above."
+      },
             "correctAnswer": "a",
-            "difficulty": "advanced"
+            "difficulty": "Advanced"
         },
          {
             "question": "What is the difference between the \"try/except\" and \"try/finally\" blocks in exception handling in Python?",
@@ -55,8 +79,14 @@
                 "c": "The \"try/except\" block is used to raise an exception manually, while the \"try/finally\" block is used to define code that will always execute.",
                 "d": "None of the above"
             },
+             "explanations": {
+                                "a": "This option is correct. The try/except block is used to catch and handle exceptions that may occur in a specific block of code. It allows you to specify alternative code to be executed when an exception occurs. On the other hand, the try/finally block is used for cleanup operations, ensuring that certain code will be executed regardless of whether an exception occurred or not. It is commonly used to release resources or perform cleanup tasks.",
+                                "b": "This option is incorrect. The try/except block is primarily used for catching and handling exceptions, not to ensure a specific block of code is always executed. The try/finally block is responsible for executing code that should always run, regardless of exceptions.",
+                                "c": "This option is incorrect. The try/except block is used to handle exceptions that are raised by the program, not to raise exceptions manually. The try/finally block is used for defining code that will always execute, regardless of exceptions.",
+                                "d": "This option is incorrect. The correct answer is option a"
+      },
             "correctAnswer": "a",
-            "difficulty": "advanced"
+            "difficulty": "Advanced"
         },
         
         
@@ -69,6 +99,12 @@
                 "c": "RunTime Error",
                 "d": "None of the above"
             },
+            "explanations": {
+                                "a": "This option is incorrect.A Syntax Error occurs when there is an error in the syntax of the code. It means the code does not follow the correct syntax rules of the programming language. Syntax errors are typically detected by the Python interpreter during the parsing phase.",
+                                "b": "This option is incorrect.A Logical Error, also known as a semantic error, occurs when the code does not produce the intended result due to a flaw in the logic or algorithm. It means the code is syntactically correct but does not work as expected. Logical errors are often caused by mistakes in the design or implementation of the code.",
+                                "c": "This option is correct.A RunTime Error, also known as an exception, occurs during the execution of the program. It indicates an abnormal condition or situation that causes the program to terminate or behave unexpectedly. RunTime errors can be caused by various factors such as division by zero, invalid input, accessing an undefined variable, etc.",
+                                "d": "This option is incorrect, as option c is the correct answer"
+      },
             "correctAnswer": "c",
             "difficulty": "intermediate"
         },
@@ -80,19 +116,31 @@
                 "c": "Syntax Error",
                 "d": "None of the above"
             },
+            "explanations": {
+                                "a": "This option is incorrect.A Runtime Error, also known as an exception, occurs during the execution of the program. It indicates an abnormal condition or situation that causes the program to terminate or behave unexpectedly. However, in this scenario, the code compiles successfully and gives an output, so it does not represent a Runtime Error.",
+                                "b": "This option is correct.A Logical Error, also known as a semantic error, occurs when the code does not produce the intended result due to a flaw in the logic or algorithm. In this scenario, where the code compiles successfully but produces an incorrect output, it aligns with the definition of a Logical Error. The mistake lies in the design or implementation of the code, which leads to incorrect output.",
+                                "c": "This option is incorrect.A Syntax Error occurs when there is an error in the syntax of the code. It means the code does not follow the correct syntax rules of the programming language. In this scenario, since the code compiles successfully, it suggests that there are no syntax errors present.",
+                                "d": "This option is incorrect as option b is the correct answer"
+      },
             "correctAnswer": "b",
-            "difficulty": "intermediate"
+            "difficulty": "Intermediate"
         },
         {
             "question": "Which of the following is not a common built-in exception in Python?",
             "answers": {
-                "a": "ValueError",
-                "b": "IndexError",
-                "c": "FileNotFoundError",
-                "d": "FileExistsError"
+                            "a": "ValueError",
+                            "b": "IndexError",
+                            "c": "FileNotFoundError",
+                            "d": "FileExistsError"
             },
+            "explanations": {
+                                "a": "ValueError is a common built-in exception in Python that is raised when a function receives an argument of the correct type but an inappropriate value. It indicates an error in the input value.",
+                                "b": "IndexError is a common built-in exception in Python that is raised when trying to access an index that is out of range in a sequence such as a list or tuple. It indicates an error in accessing elements by an invalid index.",
+                                "c": "FileNotFoundError is a common built-in exception in Python that is raised when trying to access a file or path that does not exist. It indicates an error in finding or accessing a specified file.",
+                                "d": "FileExistsError is not a common built-in exception in Python. It is used to handle the specific case when attempting to create a file or directory that already exists. "
+      },
             "correctAnswer": "d",
-            "difficulty": "intermediate"
+            "difficulty": "Intermediate"
         },
         
         {
@@ -103,8 +151,14 @@
                 "c": "IndexError",
                 "d": "ModuleNotFoundError"
             },
+            "explanations": {
+                                "a": "KeyError is an error that occurs when trying to access a key that does not exist in a dictionary. It is raised when attempting to access a non-existent key.",
+                                "b": "TypeError is an error that occurs when performing an operation on incompatible data types. It is raised when using operands or arguments of different types that cannot be operated upon together.",
+                                "c": "IndexError is an error that occurs when trying to access an index that is out of range in a sequence such as a list or tuple. It is raised when attempting to access an invalid index position.",
+                                "d": "When a programmer tries to import a module in their program that they have never created, it results in a ModuleNotFoundError. This error indicates that the specified module does not exist or cannot be found."
+      },
             "correctAnswer": "d",
-            "difficulty": "advanced"
+            "difficulty": "Advanced"
         }
     ]
 }
