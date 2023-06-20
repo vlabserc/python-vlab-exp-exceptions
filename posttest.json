@@ -9,8 +9,14 @@
                 "c": "KeyError",
                 "d": "IndexError"
             },
+             "explanations": {
+                                "a": "This option implies that the code will output the value associated with the key 'colleges' in the dictionary. However, in the given dictionary, the key is 'college' (singular) and not 'colleges' (plural). Therefore, this option is incorrect.",
+                                "b": "ValueError is an error that occurs when a function receives an argument of the correct type but an invalid value. It is not relevant to the given code scenario, so this option is incorrect.",
+                                "c": "Accessing the key 'colleges' in the dictionary 'my_dict' will raise a KeyError because that key does not exist. Therefore, the output of the code will be a KeyError.",
+                                "d": "IndexError is an error that occurs when trying to access an index that is out of range in a sequence. Since dictionaries are not accessed by index, this option is irrelevant to the given code scenario."
+      },
             "correctAnswer": "c",
-            "difficulty": "beginner"
+            "difficulty": "Beginner"
         },
         {
             "question": "colleges=[“IIIT”,“IIT”,“NIT”,“NMIMS”] print(colleges[4]) what would be the output of the same?",
@@ -20,8 +26,14 @@
                 "c": "KeyError",
                 "d": "ValueError"
             },
+             "explanations": {
+                                "a": "This option implies that the code will output the value at index 4 in the list 'colleges'. However, the given list has indices from 0 to 3, so accessing index 4 will raise an IndexError. Therefore, this option is incorrect.",
+                                "b": "Accessing index 4 in the list 'colleges' will raise an IndexError because the list has indices from 0 to 3. Therefore, the output of the code will be an IndexError.",
+                                "c": "KeyError is an error that occurs when trying to access a key that does not exist in a dictionary. Since the given code is dealing with a list, not a dictionary, KeyError is not applicable. Therefore, this option is incorrect.",
+                                "d": "ValueError is an error that occurs when a function receives an argument of the correct type but an invalid value. It is not relevant to the given code scenario, so this option is incorrect."
+      },
             "correctAnswer": "b",
-            "difficulty": "beginner "
+            "difficulty": "Beginner "
         },
         {
             "question": "Which keyword is used to catch and handle exceptions in Python?",
@@ -31,20 +43,16 @@
                 "c": "raise",
                 "d": "finally"
             },
+             "explanations": {
+                                "a": "The 'try' keyword is used to define a block of code where exceptions might occur. It is followed by one or more 'except' blocks to handle specific exceptions.",
+                                "b": "The 'except' keyword is used to catch and handle exceptions in Python. It allows the programmer to specify code that should be executed when a specific exception occurs within a 'try' block.",
+                                "c": "The 'raise' keyword is used to manually raise an exception in Python. It is used when a specific condition is met, and the programmer wants to raise an exception explicitly.",
+                                "d": "The 'finally' keyword is used to define a block of code that will be executed regardless of whether an exception occurred or not. It is generally used for cleanup operations."
+      },
             "correctAnswer": "b",
-            "difficulty": "beginner "
+            "difficulty": "Beginner "
         },
-        {
-            "question": "A _________ is an object with description of what went wrong followed by a traceback of where the problem occurred?",
-            "answers": {
-                "a": "Exception",
-                "b": "Error",
-                "c": "All of the above",
-                "d": "None of the above"
-            },
-            "correctAnswer": "a",
-            "difficulty": "advanced"
-        },
+        
          {
             "question": "What type of exception is raised when a user provides an invalid value to a function, even though the argument itself is valid?",
             "answers": {
@@ -53,8 +61,14 @@
                 "c": "IndexError",
                 "d": "RangeError"
             },
+              "explanations": {
+                                    "a": "When a user provides an invalid value to a function, even if the argument itself is of the correct data type, the ValueError exception is typically raised to indicate the inappropriate value provided.",
+                                    "b": "The TypeError exception is raised when an operation or function is applied to an object of an inappropriate type. It indicates that the types of the operands or arguments are not compatible for the operation being performed.",
+                                    "c": "The IndexError exception is raised when trying to access an index that is outside the range of valid indices for a sequence, such as a list or a string.",
+                                    "d": "The RangeError is not a built-in exception in Python. It is more commonly associated with other programming languages like C++ and is used to indicate errors related to values falling outside a specified range."
+      },
             "correctAnswer": "a",
-            "difficulty": "advanced"
+            "difficulty": "Advanced"
         },
         {
             "question": "In the scenario described in the theory section, what type of exception occurred when Tanmay mistakenly entered the wrong code number while ordering pizza?",
@@ -64,8 +78,14 @@
                 "c": "IndexError",
                 "d": "RangeError"
             },
+             "explanations": {
+                                "a": "This option in incorrect, read the theory section properly",
+                                "b": "This option in incorrect, read the theory section properly",
+                                "c": "This option in correct",
+                                "d": "This option in incorrect, read the theory section properly"
+      },
             "correctAnswer": "c",
-            "difficulty": "advanced"
+            "difficulty": "Advanced"
         },
         {
             "question": "When the program has asked you to enter input in Integer format, but you entered the input in string format, which of the following Exceptions would Occur? ",
@@ -75,8 +95,14 @@
                 "c": "ValueError Exception",
                 "d": "ZeroDivisionError Exception"
             },
+             "explanations": {
+                                "a": "The IndexError exception is raised when trying to access an index that is outside the range of valid indices for a sequence. However, entering a string instead of an integer would not result in an IndexError. Therefore, IndexError is not the correct exception for this scenario.",
+                                "b": "The NameError exception is raised when a local or global name is not found. It occurs when trying to use a variable or a function name that has not been defined. However, entering a string instead of an integer does not involve a NameError. Therefore, NameError is not the correct exception for this scenario.",
+                                "c": "The ValueError exception is raised when a function receives an argument of the correct data type but with an invalid value. In this scenario, when the program expects an input in integer format but receives a string, a ValueError would occur because the conversion from string to integer cannot be performed. Therefore, ValueError is the correct exception for this scenario.",
+                                "d": "The ZeroDivisionError exception is raised when dividing a number by zero. It is not relevant to the scenario described, as it involves dividing by zero rather than converting a string to an integer. Therefore, ZeroDivisionError is not the correct exception for this scenario."
+      },
             "correctAnswer": "c",
-            "difficulty": "intermediate"
+            "difficulty": "Intermediate"
         },
         {
             "question": "What is the purpose of using exception handling in Python?",
@@ -86,8 +112,14 @@
                 "c": "To identify and handle specific errors gracefully.",
                 "d": "To confuse the programmer by generating random error messages."
             },
+             "explanations": {
+                                "a": "This statement is not entirely accurate. Exception handling is not primarily used to stop program execution but rather to handle errors in a controlled manner. It allows the program to continue running and perform necessary actions when an error occurs.",
+                                "b": "Ignoring errors is not the purpose of exception handling. It is generally considered bad practice to ignore errors without taking any action. Exception handling is designed to catch and handle errors appropriately rather than ignore them.",
+                                "c": "This is the correct purpose of exception handling. Exception handling allows the programmer to identify specific errors that may occur during program execution and define appropriate actions to handle those errors gracefully. It helps in maintaining program stability and providing informative error messages to users.",
+                                "d": "This statement is incorrect. Exception handling is meant to provide clear and meaningful error messages to help the programmer identify and resolve issues in the code. It aims to reduce confusion and improve the debugging process."
+      },
             "correctAnswer": "c",
-            "difficulty": "intermediate"
+            "difficulty": "Intermediate"
         },
         {
             "question": "Statement which can raise exceptions are kept inside except clause and the statements that handle the exceptions are kept inside try clause",
@@ -97,8 +129,14 @@
                 "c": "Maybe",
                 "d": "None of the above"
             },
+             "explanations": {
+                                "a": "This statement is incorrect. The statements that can potentially raise exceptions are kept inside the try clause, not the except clause. The except clause is used to handle and catch those exceptions.",
+                                "b": "This statement is correct. The try clause is used to enclose the statements that might raise exceptions, and the except clause is used to handle and catch those exceptions. The statements that handle the exceptions are placed inside the except clause.",
+                                "c": "This option is not a valid answer as it does not provide a definitive explanation. The correct answer is either true or false, depending on the accuracy of the statement.",
+                                "d": "This option is not correct as the correct answer is b) False. The statement is false because the try clause is used for statements that might raise exceptions, while the except clause is used for handling and catching those exceptions."
+      },
             "correctAnswer": "b",
-            "difficulty": "intermediate"
+            "difficulty": "Intermediate"
         }
     ]
 }
